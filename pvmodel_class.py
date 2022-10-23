@@ -381,7 +381,7 @@ class pvmodel:
         if((error_power > error_max) or (error_current > (error_max)) 
             or (error_voltage > (error_max))):
             self.generate_model()
-        #self.operating_points()
+        
         return (np.asarray([voltage_lw, current_lw]), Voc, Isc, Vmp, Imp)
 
 
