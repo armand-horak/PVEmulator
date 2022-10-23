@@ -364,8 +364,6 @@ class pvmodel:
         # Max Power Calculations:
         max_power_index_fitted = np.argmax(p_fitted)
         max_power_fit = p_fitted[max_power_index_fitted]
-
-        #print('Max power fit:', max_power_fit)
         max_power_voltage = voltage_lw[max_power_index_fitted]
         max_power_current = current_lw[max_power_index_fitted]
         max_power_actual = Vmp * Imp
